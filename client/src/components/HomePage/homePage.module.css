@@ -1,0 +1,89 @@
+.diagonalBox {
+    height: 80vh;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 150px;
+    padding-bottom: 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../../public/geometricImage.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+	transform: skewY(-11deg);
+}
+
+.homepageContainer{
+    position: relative;
+    color:white;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+/* Background diagonal  */
+
+.content { 	
+	max-width: 65em;
+    margin: 0 auto;
+    transform: skewY(11deg);
+}
+
+
+.homepageInner > *:first-child {
+    left: 0;
+    right: 0;
+    bottom: 170px;
+    position: absolute;
+    animation: slide-in-from-left 1.5s;
+}
+
+.homepageInner > *:last-child {
+    left: 0;
+    bottom: 80px;
+    right: 0;
+    position: absolute;
+    animation: slide-in-from-right 1.5s;
+}
+
+.homepageTitle{
+    background: black;
+    padding : 20px; 
+    text-align:center
+} 
+
+.homeLink {
+    border: 1px solid rgb(75, 176, 235);
+    border-radius: 5px;
+    width: 150px;
+    margin: 30px 10px;
+    padding: 5px;
+    background: rgb(64, 148, 197);
+    font-size: 1.2rem;
+    text-align:center;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes slide-in-from-left{
+    0% {
+        transform: translateX(-100%)
+    }
+    100% {
+        transform: translateX(0%)
+    }
+}
+
+@keyframes slide-in-from-right{
+    0% {
+        transform: translateX(100%)
+    }
+    100% {
+        transform: translateX(0%)
+    }
+}

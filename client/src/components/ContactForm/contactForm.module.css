@@ -1,0 +1,22 @@
+.contactForm {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contactContent{
+    height: 200px;
+}
+
+.postInput {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+
+.contactFooter {
+    width: 100%;
+    justify-content: center;
+}

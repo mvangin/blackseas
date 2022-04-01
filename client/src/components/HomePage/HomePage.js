@@ -2,7 +2,9 @@ import React from "react"
 import { Link } from 'react-scroll'
 import Button from "react-bootstrap/Button"
 import AboutUs from "../AboutUs/AboutUs"
-import  "./styles.css"
+import "./styles.css"
+import classes from "./homePage.module.css"
+
 
 
 function Homepage() {
@@ -12,23 +14,12 @@ function Homepage() {
         <>
             <div id="homepage" style={{ paddingTop: "100px", background: "black" }}>
                 <div >
-                    <div fluid
-                        className="diagonal-box jumbotron"
-                        style={{
-                            height: "80vh",
-                            marginTop: "0px",
-                            marginBottom: "0px",
-                            paddingTop: "150px",
-                            paddingBottom: "0px",
-                            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/geometricImage.webp')",
-                            backgroundRepeat: 'no-repeat',
-                            backgroundSize: "cover"
-
-                        }}>
-                        <div className="homepageContainer content">
-                            <div className="homepageInner">
+                    <div className={`${classes.diagonalBox} jumbotron`}
+                    >
+                        <div className={`${classes.homepageContainer}   ${classes.content}`}>
+                            <div className={`${classes.homepageInner} `}>
                                 <div>
-                                    <h1 className="text-center" style={{ background: "black", padding: "20px" }}>
+                                    <h1 className={`${classes.homepageTitle} `} >
                                         BLACK SEA CONSULTANCY
                                     </h1>
                                     <div className="text-center">
@@ -37,14 +28,19 @@ function Homepage() {
                                     </div>
                                 </div>
                                 {
-                                    <div className="linkContainer">
+                                    <div className={`${classes.linkContainer}`}>
                                         <Link
                                             to="About_us"
                                             spy={true}
                                             smooth={true}
                                             offset={-80}
                                             className="link">
-                                            <Button style={{ color: "white" }} variant="outline-secondary" className="homeLink"> Learn More </Button> </Link>
+                                            <Button
+                                                variant="outline-secondary"
+                                                className={`${classes.homeLink} text-white`}>
+                                                Learn More
+                                            </Button>
+                                        </Link>
                                     </div>
                                 }
                             </div>
