@@ -1,0 +1,577 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*  navbar  */
+
+.nav-link:hover {
+    transform: scale(.98);
+}
+
+
+
+.contactForm {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contactContent{
+    height: 200px;
+}
+
+.postInput {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+
+.allPosts {
+    font-size:1.5rem;
+}
+
+.shoppingIcon {
+    font-size: 2rem;
+    color: white;
+    margin: 1rem 0rem;
+}
+
+
+.fa {
+    font-size: 1.2rem;
+    color: white;
+     margin: .5rem;
+}  
+
+.fa:hover  {
+    transform: scale(1.3);
+}
+
+.faShop:hover {
+    transform: scale(1.2);
+}
+
+.contactUs {
+    max-width: 100px;
+}
+
+#closeContact {
+    position: absolute;
+    width: 40px;
+    background:rgb(199, 9, 9);
+    border: none;
+    right: -10px;
+    top: -80px;
+    display: flex;
+    justify-content: center;
+}
+
+.faTimesCircle{
+    font-size: 1.5rem;
+}
+
+#contactFooter {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Background diagonal  */
+.diagonal-box {
+	background-color: black;
+    height: 100vh;
+	transform: skewY(-11deg);
+} 
+.content { 	
+	max-width: 65em;
+    margin: 0 auto;
+    transform: skewY(11deg);
+}
+
+/*  Login/Signup page */
+
+.loginSignupContainer {
+    padding-top: 150px;
+}
+
+.loginSignupCont {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.loginSignupBorder {
+    width: 500px;
+    padding: 20px 0px 0px 0px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.userContainer{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.userChoice {
+    cursor: pointer;
+    padding: 5px 20px;
+}
+
+
+.bodyContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.formContainer {
+    width: 100%;
+  
+}
+
+.errors {
+    color: red;
+}
+.loginError {
+    color: red;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
+
+.formLabel {
+    width: 100%;
+    padding: 10px;
+
+}
+
+.formInput {
+    width: 100%;
+    margin-top:10px;
+    padding: 10px;
+
+}
+
+.marketingUpdates{
+    margin: 0px 10px;
+    
+}
+
+
+.formSubmit {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.submit {
+    border: 1px solid rgb(75, 176, 235);
+    border-radius: 5px;
+    width: 100%;
+    padding: 1.3rem;
+    background: rgb(64, 148, 197);
+    font-size: 1.5rem;
+    color:rgb(250, 250, 250);
+}
+
+
+
+.createPostContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.postForm {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.postAuthor {
+    color: rgb(87, 86, 86);
+}
+
+/*  homepage  */
+
+.homepageJumbo1 {
+    height: 100vh;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homepageContainer {
+    position: relative;
+    color:white;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.homepageInner > *:first-child {
+    left: 0;
+    right: 0;
+    bottom: 170px;
+    position: absolute;
+    animation: slide-in-from-left 1.5s;
+}
+
+.homepageInner > *:last-child {
+    left: 0;
+    bottom: 80px;
+    right: 0;
+    position: absolute;
+    animation: slide-in-from-right 1.5s;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.linkContainer button:hover{
+    transform: scale(.97)
+}
+.homeLink {
+    border: 1px solid rgb(75, 176, 235);
+    border-radius: 5px;
+    width: 150px;
+    margin: 30px 10px;
+    padding: 5px;
+    background: rgb(64, 148, 197);
+    font-size: 1.2rem;
+    color:rgb(250, 250, 250);
+}
+
+.link {
+    color: white;
+}
+
+/*  Post  */
+.postContainer {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#postCard {
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+.card-link+.card-link {
+    margin-left: 0rem !important;
+    margin-bottom: 1.2rem !important;
+}
+
+
+
+.sizeContainer {
+    width: 80%;
+}
+
+.postTitleContainer{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.createComment {
+    margin-top: 30px;
+}
+
+.commentInput {
+    width: 100%;
+}
+
+.commentContainer {
+    border-bottom: 1px solid rgb(180, 179, 179);
+    padding: 10px;
+    margin: 20px;
+}
+
+.commentAuthor {
+    color: grey;
+    font-size: .8rem;
+}
+
+.commentContent {
+    margin-top: 10px;
+}
+
+.commentSubmit {
+    border: 1px solid rgb(75, 176, 235);
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    background: rgb(64, 148, 197);
+    color:rgb(250, 250, 250);
+}
+
+.allCommentsContainer {
+    margin-top: 30px;
+}
+
+
+
+/*  PostList   */
+
+.postListContainer {
+    padding-top: 150px;
+}
+
+.banner {
+    display: flex;
+    background:rgb(235, 233, 233);
+    padding: 10px;
+}
+
+.bannerContent {
+    width: 100%;
+    padding: 50px 25px;
+}
+
+.bannerTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.bannerSummary {
+    padding-top: 25px;
+}
+
+#shopLink {
+    color: black;
+}
+
+.storePic {
+   width: 100%;
+   max-height: 400px;
+}
+
+.storePic2 {
+    display: none;
+}
+
+.authorContainer {
+    float: right;
+    width: 30%;
+    padding: 20px;
+    display: none;
+}
+
+#authorPic {
+    width: 40%;
+    float: left;
+    margin: 0px 15px 0px 0px;
+}
+
+.card-link:hover {
+    text-decoration: none;
+    transform: scale(.98);
+}
+/*  footer  */
+
+.footer {
+    background-color: rgb(41, 41, 41);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+.footer h1 {
+    font-size: 20px;
+    color: white;
+    padding: 20px 0px 10px 0px;
+
+}
+.footer .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .socialIcons {
+    padding: 0px 0px 20px 0px;
+}
+
+.recentPubs .pubContainer h1 {
+    background: white;
+    color: rgb(41, 41, 41);
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.recentPubs img {
+    width: 100px;
+}
+
+
+.recentPubs .pubContainer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.recentPubs .pubContainer p{
+    font-size: .8rem;
+    max-width: 300px;
+    padding-right: 10px;
+}
+
+.recentPubs .pubContainer a {
+    text-decoration: none;
+    color:white;
+}
+
+
+.recentPubs .pubContainer p:hover {
+    transform: scale(.97);
+}
+
+
+.recentPubs .pubContainer img:hover {
+    transform: scale(.97);
+}
+
+.twitter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;;
+}
+.twitter img {
+    padding: 10px;
+    width: 300px;
+}
+
+.twitter img:hover {
+    transform: scale(.98);
+    cursor: pointer;
+}
+
+.twitter h1 {
+    background: white;
+    color: rgb(41, 41, 41);
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+@keyframes slide-in-from-left{
+    0% {
+        transform: translateX(-100%)
+    }
+    100% {
+        transform: translateX(0%)
+    }
+}
+
+@keyframes slide-in-from-right{
+    0% {
+        transform: translateX(100%)
+    }
+    100% {
+        transform: translateX(0%)
+    }
+}
+
+/*  Media Queries  */
+
+@media (max-width: 768px) {
+    .banner {
+        display: block;
+    }
+
+    .bannerContent {
+        text-align: center;
+    }
+
+    .bannerPics {
+        text-align: center;
+    }
+
+    .storePic1 {
+        width: 50%;
+    }
+
+}
+
+
+@media (min-width: 992px){
+    .footer{
+        grid-template-columns: .8fr 1.1fr 1.1fr;
+
+    }
+    .allPosts {
+        font-size:1.2rem;
+    }
+
+    .borderLoginLogout{
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    .shoppingIcon {
+        font-size: 1.5rem;
+        color: white;
+        margin: 1.5rem;
+    }
+
+    .contactUs {
+        text-align: center;
+        background: rgb(224, 79, 11);
+        border: 1px solid rgb(224, 79, 11);
+        border-radius: 5px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .bannerContent {
+        width: 50%;
+    }
+
+    .bannerPics {
+        display: flex;
+    }
+
+    .authorContainer {
+        display: block;
+    }
+
+    .storePic {
+        width: 50% 
+    }
+
+    .storePic2 {
+        display: block;
+    }
+
+
+}
+
