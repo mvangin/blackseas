@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 import { useState } from "react"
 import ContactForm from "../ContactForm/ContactForm"
 import classes from "./navbar.module.css"
-
+import Container from "react-bootstrap/Container"
 
 function NavbarComponent() {
 
@@ -12,62 +12,35 @@ function NavbarComponent() {
     const [contactModalShow, setContactModalShow] = useState(false);
 
     return (
-        <Navbar fixed="top"
-            style={{ background: "black", paddingTop: "0px", paddingBottom: "0px" }}
-            className="navbarChange w-100"
-            collapseOnSelect
-            expand="lg"
-            variant="dark" >
-
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse className=" p-2" id="responsive-navbar-nav" >
-                <Navbar.Brand>
-                    <Link to="/"
-                        className="nav-link text-light"
-                        style={{ borderBottom: "1px solid grey" }}>
-                        <h1 style={{ fontSize: "25px" }}>
-                            Black Sea Consultancy
-                        </h1>
-                    </Link>
-                </Navbar.Brand >
-                <Nav className="">
-                    <Link
-                        to="homepage"
-                        activeClass="active"
-                        spy={true}
-                        smooth={true}
-                        className="nav-link "
-                        style={{ cursor: "pointer" }}
-                    >
-                        Home
-                    </Link>
-                </Nav>
-                <Nav>
-                    <Link
-                        to="About_us"
-                        spy={true}
-                        smooth={true}
-                        offset={-80}
-                        className="nav-link "
-                        style={{ cursor: "pointer" }}
-                    >
-                        About Us
-                    </Link>
-                </Nav>
-
-                <Nav>
-                    <Link
-                        style={{ cursor: "pointer" }}
-                        onClick={() => setContactModalShow(true)}
-                        className={`${classes.contactUs} nav-link text-light`}> Contact Us </Link>
-                </Nav>
-            </Navbar.Collapse >
-
+        <>
+            <Navbar
+                className={`${classes.navBar}`}
+                fixed="top"
+                id="navbar"
+                collapseOnSelect
+                expand="lg"
+                variant="dark" >
+                    <Navbar.Brand className="ms-3" href="#home">Black Seas Consultancy</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <div className={`${classes.navbarContainer}`} >
+                            <Nav.Link className={`${classes.navLink} ms-auto`} href="#homepage">Home</Nav.Link>
+                            <Nav.Link className={`${classes.navLink}`} href="#About_us">About Us</Nav.Link>
+                            <Nav.Link>
+                                <div
+                                    className={`${classes.contactUs} `}
+                                    onClick={() => setContactModalShow(true)}>
+                                    Contact Us
+                                </div>
+                            </Nav.Link>
+                        </div>
+                    </Navbar.Collapse>
+            </Navbar>
             <ContactForm
                 show={contactModalShow}
                 onHide={() => setContactModalShow(false)}
             />
-        </Navbar >
+        </>
     )
 }
 

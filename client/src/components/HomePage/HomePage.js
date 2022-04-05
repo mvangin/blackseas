@@ -29,18 +29,13 @@ function Homepage() {
                                 </div>
                                 {
                                     <div className={`${classes.linkContainer}`}>
-                                        <Link
-                                            to="About_us"
-                                            spy={true}
-                                            smooth={true}
-                                            offset={-80}
-                                            className="link">
+                                        <a href="#About_us">
                                             <Button
                                                 variant="outline-secondary"
                                                 className={`${classes.homeLink} text-white`}>
                                                 Learn More
                                             </Button>
-                                        </Link>
+                                        </a>
                                     </div>
                                 }
                             </div>
