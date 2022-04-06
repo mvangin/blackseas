@@ -5,3 +5,22 @@
 .navbar-collapse{
   text-align: right;
 }
+
+.modal-content{
+  border-radius: 30px;
+  background: #0c1028;
+  border: 2px solid #515151;
+  color: #d7d0d0;
+}
+
+.modal-header {
+  border:none
+}
+
+.modal-footer{
+  border:none;
+}
+
+.modal-header .btn-close {
+  color:white;
+}

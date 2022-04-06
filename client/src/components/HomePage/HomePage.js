@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from 'react-scroll'
 import Button from "react-bootstrap/Button"
 import AboutUs from "../AboutUs/AboutUs"
-import "./styles.css"
 import classes from "./homePage.module.css"
 
 
