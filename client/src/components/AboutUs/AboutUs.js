@@ -6,7 +6,7 @@ function AboutUs() {
     return (
         <div className={`${classes.diagonal}`}>
             <div className={`${classes.content} pt-4`}>
-                <div id="About_us" className="pt-4" style={{ height: "100vh" }} >
+                <div id="about_us" className="pt-4" style={{ height: "100vh" }} >
                     <div className={`${classes.aboutUsHeader}`}>
                         <h1 style={{ fontSize: "2.5rem" }} className="text-center pt-4 text-white">
                             Analyzing emerging <span className="text-danger"> threat </span>vectors in the <br /> maritime domain.

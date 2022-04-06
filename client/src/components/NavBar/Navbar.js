@@ -25,7 +25,8 @@ function NavbarComponent() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <div className={`${classes.navbarContainer}`} >
                             <Nav.Link className={`${classes.navLink} ms-auto`} href="#homepage">Home</Nav.Link>
-                            <Nav.Link className={`${classes.navLink}`} href="#About_us">About Us</Nav.Link>
+                            <Nav.Link className={`${classes.navLink}`} href="#about_us">About Us</Nav.Link>
+                            <Nav.Link className={`${classes.navLink}`} href="#press"> Press </Nav.Link>
                             <Nav.Link>
                                 <div
                                     className={`${classes.contactUs} `}

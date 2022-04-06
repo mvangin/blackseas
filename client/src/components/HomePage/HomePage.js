@@ -3,7 +3,7 @@ import { Link } from 'react-scroll'
 import Button from "react-bootstrap/Button"
 import AboutUs from "../AboutUs/AboutUs"
 import classes from "./homePage.module.css"
-
+import Press from "../Press/Press"
 
 
 function Homepage() {
@@ -43,6 +43,7 @@ function Homepage() {
                 </div>
             </div>
             <AboutUs />
+            <Press/>
         </>
     )
 }
