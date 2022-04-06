@@ -30,10 +30,10 @@
 
 .sendButton{
     width: 100%;
-    background-color: green;
-    border: 2px solid green;
-    border-radius: 10px;
-    padding: 0.5rem;
+    background-color: green !important;
+    border: 2px solid green !important;
+    border-radius: 10px !important;
+    padding: 0.5rem !important;
 }
 
 .sendButton:hover{
