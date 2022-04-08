@@ -1,10 +1,8 @@
 import Navbar from "react-bootstrap/Navbar"
 import Nav from 'react-bootstrap/Nav'
-import { Link } from 'react-scroll'
 import { useState } from "react"
 import ContactForm from "../ContactForm/ContactForm"
 import classes from "./navbar.module.css"
-import Container from "react-bootstrap/Container"
 
 function NavbarComponent() {
 

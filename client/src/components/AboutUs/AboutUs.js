@@ -16,6 +16,7 @@ function AboutUs() {
                         <Card className={`${classes.cardContainer}`} style={{ borderRadius: "20px", width: '18rem' }}>
                             <Card.Title className="text-center p-2">
                                 <img style={{ borderRadius: "20px" }}
+                                    alt="data chart"
                                     src="dataChart.jpeg"
                                     height={80}
                                     width={80} />
@@ -28,21 +29,29 @@ function AboutUs() {
                         </Card>
                         <Card className={`${classes.cardContainer}`} style={{ borderRadius: "20px", width: '18rem' }}>
                             <Card.Title className="text-center p-2">
-                                <img src="bullseye.png" height={80} width={80} />
+                                <img
+                                    alt="bullseye"
+                                    src="bullseye.png"
+                                    height={80}
+                                    width={80} />
                             </Card.Title>
                             <Card.Body className={`${classes.cardBody}`}>
                                 A <b className={`${classes.cardKeyWord}`} > <i> non-partisan </i></b> and
                                 <b className={`${classes.cardKeyWord}`}>  <i> objective </i> </b> approach to generating analysis
                             </Card.Body>
                         </Card>
-                        <Card className={`${classes.cardContainer}`} style={{ borderRadius: "20px", width: '18rem' }}>
+                        <Card
+                            className={`${classes.cardContainer}`}
+                            style={{ borderRadius: "20px", width: '18rem' }}>
                             <Card.Title className="text-center p-2">
                                 <img style={{ borderRadius: "20px" }}
+                                    alt="datachart"
                                     src="dataChart.jpeg"
                                     height={80}
                                     width={80} />
                             </Card.Title>
-                            <Card.Body className={`${classes.cardBody}`} >
+                            <Card.Body
+                                className={`${classes.cardBody}`} >
                                 A strong focus on underpinning analysis with <b className={`${classes.cardKeyWord}`}>
                                     <i> emperical </i></b> evidence
                             </Card.Body>

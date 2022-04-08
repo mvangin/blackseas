@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0573879d.css",
+    "main.js": "/static/js/main.c092f40b.js",
+    "static/media/geometricImage.webp": "/static/media/geometricImage.b4e0927d87197f1c6de7.webp",
+    "index.html": "/index.html",
+    "main.0573879d.css.map": "/static/css/main.0573879d.css.map",
+    "main.c092f40b.js.map": "/static/js/main.c092f40b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0573879d.css",
+    "static/js/main.c092f40b.js"
+  ]
+}
