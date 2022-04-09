@@ -10,7 +10,7 @@ exports.contactPost = function (req, res) {
     var clientMessage = req.body.content
 
     const msg = {
-        to: 'theblackseaconsultancy@gmail.com',
+        to: 'mavangin@gmail.com',
         from: 'theblackseaconsultancy@gmail.com', // Change to your verified sender
         subject: 'New Contact Request',
         text: `name : ${name} \n
