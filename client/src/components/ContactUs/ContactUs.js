@@ -1,6 +1,5 @@
 import React from "react"
 import Button from "react-bootstrap/Button"
-import AboutUs from "../AboutUs/AboutUs"
 import classes from "./ContactUs.module.css"
 import { useState } from "react"
 import ContactForm from "../ContactForm/ContactForm"
