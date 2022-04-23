@@ -73,11 +73,13 @@ function ContactForm({ show = true, onHide }) {
                 <Modal.Footer
                     className={`${classes.contactFooter}`}>
                     {messageSent ? <Button
+                        variant="success"
                         className={`${classes.sendButton}`}
                         onClick={handleClose}>
                         Close </Button> :
                         <Button
-                            className={`${classes.sendButton}`}
+                            variant="success"
+                            className={`${classes.sendButton} `}
                             onClick={handleSubmit}>
                             Send Message</Button>}
                 </Modal.Footer>

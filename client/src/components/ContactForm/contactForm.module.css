@@ -30,8 +30,6 @@
 
 .sendButton{
     width: 100%;
-    background-color: green !important;
-    border: 2px solid green !important;
     border-radius: 10px !important;
     padding: 0.5rem !important;
 }

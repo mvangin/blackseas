@@ -5,7 +5,7 @@ import classes from "./press.module.css"
 
 function Press() {
     return (
-        <div className={` mt-4 pt-4`}>
+        <div className={` mt-4 pt-4`} id="press">
             <h1 className={`${classes.pressHeader}`}> Selected Publications </h1>
             <div className={`${classes.pressContainer}`}>
                 <div className={`${classes.pressSection}`}>
