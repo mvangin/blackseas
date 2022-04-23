@@ -26,13 +26,6 @@
     text-align: center;
 }
 
-.diagonal {
-    background-color: black;
-    height: 100vh;
-	transform: skewY(-11deg);
-}
-
-
 
 .homepageContainer{
     position: relative;
@@ -47,10 +40,23 @@
 
 /* Background diagonal  */
 
+.diagonal {
+    background-color: black;
+	transform: skewY(-11deg);
+    height: 100vh;
+}
+
+
 .content { 	
 	max-width: 65em;
     margin: 0 auto;
     transform: skewY(11deg);
+}
+
+@media (max-width: 705px) {
+    .diagonal {
+        height: 100%;
+    }
 }
 
 

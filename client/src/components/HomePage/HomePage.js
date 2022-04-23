@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button"
 import AboutUs from "../AboutUs/AboutUs"
 import classes from "./homePage.module.css"
 import Press from "../Press/Press"
-
+import ContactUs from "../ContactUs/ContactUs"
 
 function Homepage() {
 
@@ -27,7 +27,7 @@ function Homepage() {
                                 </div>
                                 {
                                     <div className={`${classes.linkContainer}`}>
-                                        <a href="#About_us">
+                                        <a href="#about_us">
                                             <Button
                                                 variant="outline-secondary"
                                                 className={`${classes.homeLink} text-white`}>
@@ -43,6 +43,7 @@ function Homepage() {
             </div>
             <AboutUs />
             <Press/>
+            <ContactUs/>
         </>
     )
 }

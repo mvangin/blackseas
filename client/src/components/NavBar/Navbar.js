@@ -6,7 +6,6 @@ import classes from "./navbar.module.css"
 
 function NavbarComponent() {
 
-
     const [contactModalShow, setContactModalShow] = useState(false);
 
     return (
