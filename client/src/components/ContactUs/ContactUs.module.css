@@ -1,0 +1,25 @@
+.contactUsContainer {
+    height: 50vh;
+    margin-top:300px;
+    color: white;
+    text-align: center;
+}
+
+
+.diagonal {
+    background-color: black;
+    height: 100vh;
+	transform: skewY(-11deg);
+    margin-top: 150px;
+}
+
+
+.content { 	
+	max-width: 65em;
+    margin: 0 auto;
+    transform: skewY(11deg);
+}
+
+.contactHeader {
+    text-align: center;
+}
