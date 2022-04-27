@@ -3,15 +3,14 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content:center; 
 }
 
 .pressSection {
-    max-width: 450px;
+    max-width:900px;
     margin: .2rem;
-    border: 1px solid black;
-    border-radius: 10px;
     padding:1rem;
-
+    text-align: center;
 
 }
 
@@ -28,7 +27,19 @@
 
 }
 
+.pressSection ul {
+    list-style-type: none;
+}
+
 .pressSection ul li {
     padding: 10px;
+    border-bottom: 3px solid rgb(111, 6, 6);
+    margin: 10px;
+    border-radius: 10px;
+    color:black;
+}
+
+.pressSection ul li span{
+    font-weight: bolder;
 }
 
