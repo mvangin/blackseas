@@ -9,7 +9,7 @@
 .diagonal {
     background-color: black;
     height: 100vh;
-	transform: skewY(-11deg);
+	transform: skewY(-8deg);
     margin-top: 150px;
 }
 
@@ -17,7 +17,8 @@
 .content { 	
 	max-width: 65em;
     margin: 0 auto;
-    transform: skewY(11deg);
+    transform: skewY(8deg);
+    padding: 20px;
 }
 
 .contactHeader {

@@ -42,20 +42,32 @@
 
 .diagonal {
     background-color: black;
-	transform: skewY(-11deg);
+	transform: skewY(-8deg);
     height: 100vh;
+}
+
+.diagonal::before{
+    background:black;
+    width:300px;
+    height:300px;
 }
 
 
 .content { 	
-	max-width: 65em;
+    background:black;
+	padding-left: 150px;
+    padding-right: 150px;
     margin: 0 auto;
-    transform: skewY(11deg);
+    transform: skewY(8deg);
 }
 
 @media (max-width: 705px) {
     .diagonal {
         height: 100%;
+    }
+    .content { 	
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 

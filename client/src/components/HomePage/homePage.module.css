@@ -8,7 +8,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
-	transform: skewY(-11deg);
 }
 
 .homepageContainer{
@@ -27,7 +26,6 @@
 .content { 	
 	max-width: 65em;
     margin: 0 auto;
-    transform: skewY(11deg);
 }
 
 

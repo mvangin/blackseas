@@ -3,11 +3,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content:center; 
+    justify-content:space-around 
 }
 
 .pressSection {
-    max-width:900px;
+    max-width:1100px;
     margin: .2rem;
     padding:1rem;
     text-align: center;
@@ -24,11 +24,20 @@
     font-size: 1.5rem;
     text-align: center;
     padding-bottom: 1rem;
+    background:black;
+    color:white;
+    padding:20px;
+    border: 1px solid black;
+    border-radius:10px;
 
 }
 
 .pressSection ul {
     list-style-type: none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+
 }
 
 .pressSection ul li {
@@ -37,7 +46,10 @@
     margin: 10px;
     border-radius: 10px;
     color:black;
+    width: 300px;
+    flex-wrap:wrap;
 }
+
 
 .pressSection ul li span{
     font-weight: bolder;
