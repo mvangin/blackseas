@@ -30,9 +30,33 @@ function Press() {
 
 	function renderPressList(pressList) {
 		return pressList.map((pressItem) => (
-			<li key={pressItem.title}>
-				<span>{pressItem.title} </span>
-				<br /> {pressItem.publisher} {pressItem.year} {pressItem.author}
+			<li key={pressItem.title} className="d-flex justify-content-around">
+				{pressItem.imageSrc && (
+					<div>
+						<img
+							style={{ borderRadius: '20px' }}
+							alt="press preview"
+							src={pressItem.imageSrc}
+							height={200}
+							width={200}
+						/>
+					</div>
+				)}
+				<div className="d-flex align-items-center justify-center p-2">
+					<a
+						className={classes.link}
+						href={pressItem.link}
+						target="_blank"
+						rel="noreferrer"
+					>
+						<h2 className={classes.pressTitle}>
+							{pressItem.title}{' '}
+						</h2>
+						<i>
+							{pressItem.publisher} {pressItem.year}
+						</i>
+					</a>
+				</div>
 			</li>
 		));
 	}
@@ -84,7 +108,7 @@ function Press() {
 						onClick={() => handleShowPress('policyBrief')}
 					>
 						<h2 className={`${classes.pressSectionHeader}`}>
-							Policy Brief Publication
+							Policy Brief Publications
 							<div
 								className={`${classes.downArrow} ${
 									showPress.includes('policyBrief') &&
@@ -100,7 +124,7 @@ function Press() {
 					)}
 				</div>
 
-				<div className={`${classes.pressSection}`}>
+				<div className={`${classes.pressSection} ${classes.editorials}`}>
 					<button
 						className={`${classes.pressExpandButton}`}
 						onClick={() => handleShowPress('openEditorial')}

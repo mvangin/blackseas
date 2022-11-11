@@ -6,7 +6,7 @@
 }
 
 .pressSection {
-	max-width: 1100px;
+	max-width: 1300px;
 	margin: 0.2rem;
 	padding: 1rem;
 	text-align: center;
@@ -42,9 +42,12 @@
 	margin: 10px;
 	border-radius: 10px;
 	color: black;
-	width: 300px;
-	flex-wrap: wrap;
+	width: 500px;
 	align-self: flex-end;
+}
+
+.pressSection.editorials ul li {
+    width: 300px;
 }
 
 .pressSection ul li span {
@@ -75,4 +78,13 @@
 .downArrow.pressedExpandButton {
     transition: transform .5s;
     transform: rotate(-90deg);
+}
+
+.link {
+    text-decoration: none;
+    color: black
+}
+
+.pressTitle {
+    font-size: 1.2rem;
 }
