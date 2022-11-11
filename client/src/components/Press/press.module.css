@@ -11,6 +11,7 @@
     margin: .2rem;
     padding:1rem;
     text-align: center;
+    align-items: end
 
 }
 
@@ -48,6 +49,7 @@
     color:black;
     width: 300px;
     flex-wrap:wrap;
+    align-self: flex-end
 }
 
 

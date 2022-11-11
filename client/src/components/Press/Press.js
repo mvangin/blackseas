@@ -6,7 +6,7 @@ import classes from "./press.module.css"
 function Press() {
     return (
         <div className={` mt-4 pt-4`} id="press">
-            <h1 className={`${classes.pressHeader}`}> Selected Publications </h1>
+            <h1 className={`${classes.pressHeader}`}> Our Publications </h1>
             <div className={`${classes.pressContainer}`}>
                 <div className={`${classes.pressSection}`}>
                     <h2 className={`${classes.pressSectionHeader}`}> Major Regional and Thematic Reports</h2>
@@ -106,7 +106,7 @@ function Press() {
                                 Stable Seas, One Earth Future. 2020 Author
                             </li>
                             <li>
-                                <spa>“The Future of Philippine Maritime Enforcement.”</spa> <br/> Published by ASEAN Post. 2019. Author.
+                                <span>“The Future of Philippine Maritime Enforcement.”</span> <br/> Published by ASEAN Post. 2019. Author.
                             </li>
                             <li>
                                 <span>“Deterrence and Inclusivity in the South China Sea.”</span> <br/> Published by Global Politics Magazine. 2019. Author.
