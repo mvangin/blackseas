@@ -6,7 +6,7 @@ function Press() {
 	const [regionalThematic, setRegionalThematic] = useState([]);
 	const [policyBrief, setPolicyBrief] = useState([]);
 	const [openEditorial, setOpenEditorial] = useState([]);
-	const [showPress, setShowPress] = useState([]);
+	const [showPress, setShowPress] = useState(["regionalThematic"]);
 
 	useEffect(() => {
 		const regionalThematicList = filterPressListByCategory(
