@@ -5,6 +5,7 @@ const press = [
 		year: '2020.',
 		author: 'Authored with Christopher Faulkner (University of Central Florida), Curtis Bell, Meghan Curran, Tyler Lycan, and Jay Benson (all Stable Seas)',
 		category: 'major_regional_thematic_report',
+		link: "https://www.stableseas.org/post/violence-at-sea-how-terrorists-insurgents-and-other-extremists-exploit-the-maritime-domain"
 	},
 	{
 		title: 'Stable Seas: Bay of Bengal.',
@@ -12,6 +13,7 @@ const press = [
 		year: '2020.',
 		author: 'Authored with Jay Benson, Curtis Bell, Lydelle Joubert, Maisie Pigeon, Asyura Salleh (all stable seas), Gayathri Iyer, (Observer Research Foundation), M J Rahman (World Fish), and M A Wahab (World Fish)',
 		category: 'major_regional_thematic_report',
+		link: "https://www.stableseas.org/post/stable-seas-bay-of-bengal#:~:text=Stable%20Seas%3A%20Bay%20of%20Bengal%20examines%20maritime%20security%20and%20governance,enforcement%20capacity%2C%20and%20international%20cooperation."
 	},
 	{
 		title: 'Black Sea Synergy: A Holistic Approach to Maritime Security.',
@@ -19,6 +21,7 @@ const press = [
 		year: '2022.',
 		author: 'Author.',
 		category: 'policy_brief_publication',
+		link: "https://www.europeum.org/en/articles/detail/4692/policy-brief-black-sea-synergy-adopting-a-holistic-approach-to-maritime-security"
 	},
 	{
 		title: 'Addressing Maritime Security in Southeast Asia',
@@ -26,6 +29,7 @@ const press = [
 		year: '2021.',
 		author: 'Author.',
 		category: 'policy_brief_publication',
+		link: 'https://www.stableseas.org/post/addressing-maritime-security-in-southeast-asia'
 	},
 
 	{
@@ -34,6 +38,7 @@ const press = [
 		year: '2020.',
 		author: 'Author.',
 		category: 'policy_brief_publication',
+		link: 'https://www.stableseas.org/post/the-blue-economy-in-the-bangsamoro-autonomous-region-in-muslim-mindanao'
 	},
 	{
 		title: 'Challenges and Solutions for Maritime Security in the Indian Ocean.',
@@ -41,12 +46,14 @@ const press = [
 		year: '2020',
 		author: 'Author.',
 		category: 'policy_brief_publication',
+		link: 'https://www.stableseas.org/post/challenges-and-solutions-for-maritime-security-in-the-indian-ocean'
 	},
 	{
 		title: 'A Pathway to Policy Change: Improving Philippine Fisheries, Blue Economy, and Maritime Law Enforcement in the Sulu and Celebes Seas.',
 		publisher: 'Stable Seas, One Earth Future. 2019.',
 		author: 'Author.',
 		category: 'policy_brief_publication',
+		link: 'https://www.stableseas.org/post/maritime-security-policy-proposals-for-the-sulu-and-celebes-seas'
 	},
 
 	{
