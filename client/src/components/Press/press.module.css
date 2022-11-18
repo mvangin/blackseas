@@ -9,24 +9,17 @@
 	max-width: 1300px;
 	margin: 0.2rem;
 	padding: 1rem;
-	text-align: center;
 	align-items: end;
 }
 
 .pressHeader {
-	padding-top: 100px;
 	text-align: center;
 }
 
 .pressSectionHeader {
-	font-size: 1.5rem;
-	text-align: center;
-	padding-bottom: 1rem;
-	background: black;
-	color: white;
-	padding: 0px 20px 10px 20px;
-	border: 1px solid black;
-	border-radius: 10px;
+	text-align: left;
+    margin-left: 5rem;
+    font-weight: bold;
 }
 
 .pressSection ul {
@@ -36,14 +29,17 @@
 	justify-content: center;
 }
 
+.pressSection ul li:hover{
+    cursor: pointer;
+    transform: translate(0, -2px)
+
+}
+
 .pressSection ul li {
 	padding: 10px;
-	border-bottom: 3px solid rgb(111, 6, 6);
 	margin: 10px;
-	border-radius: 10px;
 	color: black;
-	width: 500px;
-	align-self: flex-end;
+	max-width: 200px;
 }
 
 .pressSection.editorials ul li {
@@ -82,9 +78,68 @@
 
 .link {
     text-decoration: none;
-    color: black
+    color: black;
+    justify-content: center;
+    line-height: 2rem;
+}
+
+.primaryLink {
+    padding: 3rem;
 }
 
 .pressTitle {
     font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.imageContainer {
+    width: 50%;
+    min-width: 300px;
+}
+
+.titleContainer{
+    width: 50%;
+    
+}
+
+.horizontalLine{
+    text-align:center;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    opacity: 1;
+}
+
+.articleInfo {
+    font-size: .8rem;
+}
+
+.primaryPressTitle {
+    padding-top: 5rem;
+}
+
+.primaryPressList{
+    justify-content: around;
+}
+
+@keyframes slide-in-from-left{
+    0% {
+        transform: translateX(-100%)
+    }
+    100% {
+        transform: translateX(0%)
+    }
+}
+
+@media screen and (max-width: 500px) {
+	.primaryPressList{
+        justify-content: start;
+    }
+
+    .primaryPressTitle {
+        padding-top: 0rem;
+    }
+
+    .titleContainer{
+        width:100%;        
+    }
 }

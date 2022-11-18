@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import pressList from '../../dataFiles/press';
+import BaseButton from '../shared/BaseButton/BaseButton';
 import classes from './press.module.css';
 
 function Press() {
 	const [regionalThematic, setRegionalThematic] = useState([]);
 	const [policyBrief, setPolicyBrief] = useState([]);
 	const [openEditorial, setOpenEditorial] = useState([]);
-	const [showPress, setShowPress] = useState(["regionalThematic"]);
+	const [showPress, setShowPress] = useState([
+		'regionalThematic',
+		'policyBrief',
+	]);
 
 	useEffect(() => {
 		const regionalThematicList = filterPressListByCategory(
@@ -30,31 +34,83 @@ function Press() {
 
 	function renderPressList(pressList) {
 		return pressList.map((pressItem) => (
-			<li key={pressItem.title} className="d-flex justify-content-around">
+			<li key={pressItem.title} className="">
 				{pressItem.imageSrc && (
-					<div>
+					<div className="">
 						<img
 							style={{ borderRadius: '20px' }}
 							alt="press preview"
 							src={pressItem.imageSrc}
-							height={200}
-							width={200}
+							width={'100%'}
+							height="175"
 						/>
 					</div>
 				)}
-				<div className="d-flex align-items-center justify-center p-2">
+				<div className="">
+					<h2 className={classes.pressTitle}>{pressItem.title} </h2>
+					<div className="mt-3">{pressItem.previewText}</div>
 					<a
-						className={classes.link}
+						className={`${classes.link}`}
 						href={pressItem.link}
 						target="_blank"
 						rel="noreferrer"
 					>
-						<h2 className={classes.pressTitle}>
-							{pressItem.title}{' '}
-						</h2>
-						<i>
+						<BaseButton
+							className="text-start p-0"
+							buttonText={'See More'}
+							outline={false}
+							arrow="true"
+						/>
+					</a>
+				</div>
+			</li>
+		));
+	}
+
+	function isEvenInteger(integer) {
+		console.debug(integer, integer % 2 === 0);
+		return integer % 2 === 0 ? true : false;
+	}
+
+	function renderPrimaryPressList(pressList) {
+		return pressList.map((pressItem, index) => (
+			<li
+				key={pressItem.title}
+				className={`d-flex flex-wrap ${classes.primaryPressList} ${
+					isEvenInteger(index + 1) ? 'flex-row-reverse' : ''
+				}`}
+			>
+				{pressItem.imageSrc && (
+					<div className={`${classes.imageContainer}`}>
+						<img
+							alt="press preview"
+							src={pressItem.imageSrc}
+							width="100%"
+							height="100%"
+						/>
+					</div>
+				)}
+				<div className={`${classes.titleContainer} d-flex`}>
+					<a
+						className={`${classes.link} ${classes.primaryLink}`}
+						href={pressItem.link}
+						target="_blank"
+						rel="noreferrer"
+					>
+						<h3 className={`${classes.primaryPressTitle}`}>
+							{pressItem.title}
+						</h3>
+
+						<i className={`${classes.articleInfo}`}>
 							{pressItem.publisher} {pressItem.year}
 						</i>
+						<div>{pressItem.previewText}</div>
+
+						<BaseButton
+							buttonText={'See More'}
+							outline={false}
+							arrow="true"
+						/>
 					</a>
 				</div>
 			</li>
@@ -77,54 +133,40 @@ function Press() {
 	}
 
 	return (
-		<div className={` mt-4 pt-4`} id="press">
-			<h1 className={`${classes.pressHeader}`}> Our Publications </h1>
+		<div className={`mt-2`} id="press">
 			<div className={`${classes.pressContainer}`}>
-				<div className={`${classes.pressSection}`}>
+				<div>
 					<button
 						className={`${classes.pressExpandButton}`}
 						onClick={() => handleShowPress('regionalThematic')}
-					>
-						<h2 className={`${classes.pressSectionHeader}`}>
-							Major Regional and Thematic Reports
-							<div
-								className={`${classes.downArrow}  ${
-									showPress.includes('regionalThematic') &&
-									classes.pressedExpandButton
-								}`}
-							>
-								»
-							</div>
-						</h2>
-					</button>
+					></button>
 					{showPress.includes('regionalThematic') && (
-						<ul>{renderPressList(regionalThematic)}</ul>
+						<ul>{renderPrimaryPressList(regionalThematic)}</ul>
 					)}
 				</div>
 
 				<div className={`${classes.pressSection}`}>
-					<button
-						className={`${classes.pressExpandButton}`}
-						onClick={() => handleShowPress('policyBrief')}
-					>
-						<h2 className={`${classes.pressSectionHeader}`}>
-							Policy Brief Publications
-							<div
-								className={`${classes.downArrow} ${
-									showPress.includes('policyBrief') &&
-									classes.pressedExpandButton
-								} `}
-							>
-								»
-							</div>
-						</h2>
-					</button>
+					<hr className={`${classes.horizontalLine}`} />
+
+					<span className={`${classes.pressSectionHeader}`}>
+						Featured Policy Brief Publications
+						<div
+							className={`${classes.downArrow} ${
+								showPress.includes('policyBrief') &&
+								classes.pressedExpandButton
+							} `}
+						>
+							»
+						</div>
+					</span>
 					{showPress.includes('policyBrief') && (
-						<ul>{renderPressList(policyBrief)}</ul>
+						<ul className="">{renderPressList(policyBrief)}</ul>
 					)}
 				</div>
 
-				<div className={`${classes.pressSection} ${classes.editorials}`}>
+				{/*<div
+					className={`${classes.pressSection} ${classes.editorials}`}
+				>
 					<button
 						className={`${classes.pressExpandButton}`}
 						onClick={() => handleShowPress('openEditorial')}
@@ -146,7 +188,7 @@ function Press() {
 							<ul>{renderPressList(openEditorial)}</ul>
 						)}
 					</div>
-				</div>
+                        </div>*/}
 			</div>
 		</div>
 	);

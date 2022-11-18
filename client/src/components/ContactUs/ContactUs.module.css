@@ -1,26 +1,33 @@
 .contactUsContainer {
-    height: 50vh;
-    margin-top:300px;
     color: white;
     text-align: center;
 }
 
 
 .diagonal {
-    background-color: black;
+    background-color: #051d2c;
     height: 100vh;
-	transform: skewY(-8deg);
-    margin-top: 150px;
+    padding-top: 5rem;
 }
 
 
 .content { 	
-	max-width: 65em;
     margin: 0 auto;
-    transform: skewY(8deg);
-    padding: 20px;
 }
 
 .contactHeader {
     text-align: center;
+    width: 50%;
+    margin-top: 3rem;
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+    .diagonal {
+        height: auto;
+    }
+
+  
 }

@@ -1,22 +1,13 @@
 import React, { useState } from 'react';
 import api from '../../api';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
+import BaseButton from '../shared/BaseButton/BaseButton';
 import classes from './contactForm.module.css';
 
-function ContactForm({ show = true, onHide }) {
+function ContactForm({ messageSent, handleMessageSent}) {
 	const [email, setEmail] = useState('');
 	const [name, setName] = useState('');
 	const [content, setContent] = useState('');
-	const [messageSent, setMessageSent] = useState(false);
 	const [validationErrors, setValidationErrors] = useState('');
-
-	function handleClose() {
-		onHide();
-		setEmail('');
-		setName('');
-		setContent('');
-	}
 
 	function handleSubmit(e) {
 		e.preventDefault();
@@ -30,7 +21,7 @@ function ContactForm({ show = true, onHide }) {
 
 		try {
 			api.contactPost(payload).then((res) => {
-				setMessageSent(true);
+				handleMessageSent();
 			});
 		} catch (error) {
 			console.debug(error);
@@ -38,54 +29,43 @@ function ContactForm({ show = true, onHide }) {
 	}
 
 	return (
-		<div id="contact-form">
-			<Modal
-				onHide={handleClose}
-				show={show}
-				aria-labelledby="contained-modal-title-vcenter"
-				centered
-			>
-				<Modal.Header closeButton>
-					<Modal.Title className={`${classes.modalTitle}`}>
-						{!messageSent && 'Contact Us'}
-					</Modal.Title>
-				</Modal.Header>
-				<Modal.Body>
-					{messageSent ? (
-						<div className={`${classes.messageSent}`}>
-							Message Sent! We will get back to you soon.
-						</div>
-					) : (
+		<div id="contact-form" className={`${classes.contactFormContainer}`}>
+			<div>
+				<h3 className="text-white">{!messageSent && 'Contact Us'}</h3>
+				<div>
+					{!messageSent &&
 						<form
 							onSubmit={handleSubmit}
 							className={`${classes.contactForm}`}
 						>
-							<label>
-								<input
-									required={true}
-									placeholder="Name"
-									className={`${classes.postInput}`}
-									value={name}
-									onChange={(e) => {
-										setName(e.target.value);
-									}}
-								/>
-							</label>
-							<label>
-								<input
-									required={true}
-									placeholder="Email"
-									className={`${classes.postInput}`}
-									value={email}
-									onChange={(e) => {
-										setEmail(e.target.value);
-									}}
-								/>
-							</label>
+							<div className="d-flex justify-content-around">
+								<label>
+									<input
+										required={true}
+										placeholder="Full Name"
+										className={`${classes.postInput} ${classes.postInputSmall}`}
+										value={name}
+										onChange={(e) => {
+											setName(e.target.value);
+										}}
+									/>
+								</label>
+								<label>
+									<input
+										required={true}
+										placeholder="Email"
+										className={`${classes.postInput} ${classes.postInputSmall}`}
+										value={email}
+										onChange={(e) => {
+											setEmail(e.target.value);
+										}}
+									/>
+								</label>
+							</div>
 							<label>
 								<textarea
 									rows={5}
-									placeholder="Content"
+									placeholder="Message"
 									className={`${classes.postInput}`}
 									value={content}
 									onChange={(e) => {
@@ -93,30 +73,26 @@ function ContactForm({ show = true, onHide }) {
 									}}
 								/>
 							</label>
-							{validationErrors && <div className="text-danger mt-2"> {validationErrors} </div>}
-						</form>
-					)}
-				</Modal.Body>
-				<Modal.Footer className={`${classes.contactFooter}`}>
-					{messageSent ? (
-						<Button
-							variant="success"
-							className={`${classes.sendButton}`}
-							onClick={handleClose}
-						>
-							Close
-						</Button>
-					) : (
-						<Button
-							variant="success"
-							className={`${classes.sendButton} `}
+							{validationErrors && (
+								<div className="text-danger mt-2">
+									{validationErrors}
+								</div>
+							)}
+						</form>}
+					
+				</div>
+				<div className={`${classes.contactFooter}`}>
+					{!messageSent && (
+						<BaseButton
 							onClick={handleSubmit}
-						>
-							Send Message
-						</Button>
+							variant="primary"
+							className="text-white"
+							buttonText={'Get in touch'}
+							arrow="true"
+						></BaseButton>
 					)}
-				</Modal.Footer>
-			</Modal>
+				</div>
+			</div>
 		</div>
 	);
 }

@@ -1,7 +1,7 @@
 .contactUs {
     text-align: center;
-    background: rgb(224, 79, 11);
-    border: 1px solid rgb(224, 79, 11);
+    background: #033398;
+    border: 1px solid #033398;
     border-radius: 5px;
     color: white;
     max-width: 150px;
@@ -32,16 +32,15 @@
     display: flex;
     align-items: center;
     margin-left: auto;
-    background-color: black;
 }
 
 .navBar {
-    background-color: black;
+    background-color: #051d2c;
 }
 
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 500px) {
     .contactUs {
         margin-left: auto;
     }
@@ -49,13 +48,14 @@
     .navBar {
         background-color: transparent;
     } 
-
     .navbarContainer {
         margin-top:1rem;
         text-align: center;
         padding-top: 2rem;
         display: block;
         float: right;
+        background:#051b2b;
+        border-radius: 10px;
     }
 
   

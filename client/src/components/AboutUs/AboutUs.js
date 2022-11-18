@@ -5,8 +5,8 @@ import classes from "./aboutUs.module.css"
 function AboutUs() {
     return (
         <div className={`${classes.diagonal}`}>
-            <div className={`${classes.content} pt-4`}>
-                <div id="about_us" className="pt-4"  >
+            <div className={`${classes.content} pt-1`}>
+                <div id="about_us" className="pt-1"  >
                     <div className={`${classes.aboutUsHeader}`}>
                         <h1 style={{ fontSize: "2.5rem" }} className="text-center pt-4 text-white">
                             Analyzing emerging <span className="text-danger"> threat </span>vectors in the <br /> maritime domain.

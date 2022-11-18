@@ -42,7 +42,6 @@
 
 .diagonal {
     background-color: black;
-	transform: skewY(-8deg);
     height: 100vh;
 }
 
@@ -58,17 +57,7 @@
 	padding-left: 150px;
     padding-right: 150px;
     margin: 0 auto;
-    transform: skewY(8deg);
 }
 
-@media (max-width: 705px) {
-    .diagonal {
-        height: 100%;
-    }
-    .content { 	
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-}
 
 
