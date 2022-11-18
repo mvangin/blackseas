@@ -1,9 +1,9 @@
-import React from 'react';
 //import AboutUs from '../AboutUs/AboutUs';
-import classes from './homePage.module.css';
-import Press from '../Press/Press';
-import ContactUs from '../ContactUs/ContactUs';
 import BaseButton from '../shared/BaseButton/BaseButton';
+import classes from './homePage.module.css';
+import ContactUs from '../ContactUs/ContactUs';
+import Press from '../Press/Press';
+import React from 'react';
 
 function Homepage() {
 	return (
@@ -25,10 +25,10 @@ function Homepage() {
 									<div className={`${classes.linkContainer}`}>
 										<a href="#press">
 											<BaseButton
-                                            className={'text-white'}
-                                                variant={"outline-primary"}
+												className={'text-white'}
+												variant={'outline-primary'}
 												buttonText={'Learn More'}
-                                                arrow={"true"}
+												arrow={'true'}
 											/>
 										</a>
 									</div>

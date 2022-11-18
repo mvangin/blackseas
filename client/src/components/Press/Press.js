@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import pressList from '../../dataFiles/press';
 import BaseButton from '../shared/BaseButton/BaseButton';
 import classes from './press.module.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function Press() {
 	const [regionalThematic, setRegionalThematic] = useState([]);
@@ -73,48 +74,69 @@ function Press() {
 	}
 
 	function renderPrimaryPressList(pressList) {
-		return pressList.map((pressItem, index) => (
-			<li
-				key={pressItem.title}
-				className={`d-flex flex-wrap ${classes.primaryPressList} ${
-					isEvenInteger(index + 1) ? 'flex-row-reverse' : ''
-				}`}
-			>
-				{pressItem.imageSrc && (
-					<div className={`${classes.imageContainer}`}>
-						<img
-							alt="press preview"
-							src={pressItem.imageSrc}
-							width="100%"
-							height="100%"
-						/>
+		return pressList.map((pressItem, index) => {
+			const slideDirection = isEvenInteger(index + 1)
+				? 'slideInLeft'
+				: 'slideInRight';
+
+			return (
+				<li
+					key={pressItem.title}
+					className={`d-flex flex-wrap ${classes.primaryPressList} ${
+						isEvenInteger(index + 1) ? 'flex-row-reverse' : ''
+					}`}
+				>
+					{pressItem.imageSrc && (
+						<div className={`${classes.imageContainer}`}>
+							<img
+								alt="press preview"
+								src={pressItem.imageSrc}
+								width="100%"
+								height="100%"
+							/>
+						</div>
+					)}
+					<div className={`${classes.titleContainer} d-flex`}>
+						<a
+							className={`${classes.link} ${classes.primaryLink}`}
+							href={pressItem.link}
+							target="_blank"
+							rel="noreferrer"
+						>
+							<h3 className={`${classes.primaryPressTitle}`}>
+								<ScrollAnimation
+									animateOnce={true}
+									animateIn={slideDirection}
+								>
+									{pressItem.title}
+								</ScrollAnimation>
+							</h3>
+
+							<i className={`${classes.articleInfo}`}>
+								<ScrollAnimation
+									animateOnce={true}
+									animateIn={slideDirection}
+								>
+									{pressItem.publisher} {pressItem.year}
+								</ScrollAnimation>
+							</i>
+							<ScrollAnimation
+								animateOnce={true}
+								animateIn={slideDirection}
+							>
+								<div>{pressItem.previewText}</div>
+
+								<BaseButton
+									buttonText={'See More'}
+									outline={false}
+									arrow="true"
+								/>
+							</ScrollAnimation>
+						</a>
 					</div>
-				)}
-				<div className={`${classes.titleContainer} d-flex`}>
-					<a
-						className={`${classes.link} ${classes.primaryLink}`}
-						href={pressItem.link}
-						target="_blank"
-						rel="noreferrer"
-					>
-						<h3 className={`${classes.primaryPressTitle}`}>
-							{pressItem.title}
-						</h3>
-
-						<i className={`${classes.articleInfo}`}>
-							{pressItem.publisher} {pressItem.year}
-						</i>
-						<div>{pressItem.previewText}</div>
-
-						<BaseButton
-							buttonText={'See More'}
-							outline={false}
-							arrow="true"
-						/>
-					</a>
-				</div>
-			</li>
-		));
+				</li>
+			);
+		});
 	}
 
 	function filterPressListByCategory(pressList, category) {
