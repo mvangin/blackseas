@@ -6,7 +6,7 @@ import classes from './press.module.css';
 function Press() {
 	const [regionalThematic, setRegionalThematic] = useState([]);
 	const [policyBrief, setPolicyBrief] = useState([]);
-	const [openEditorial, setOpenEditorial] = useState([]);
+	//const [openEditorial, setOpenEditorial] = useState([]);
 	const [showPress, setShowPress] = useState([
 		'regionalThematic',
 		'policyBrief',
@@ -25,11 +25,11 @@ function Press() {
 		);
 		setPolicyBrief(policyBriefList);
 
-		const openEditorialList = filterPressListByCategory(
-			pressList,
-			'open_editorial'
-		);
-		setOpenEditorial(openEditorialList);
+		// const openEditorialList = filterPressListByCategory(
+		// 	pressList,
+		// 	'open_editorial'
+		// );
+		//setOpenEditorial(openEditorialList);
 	}, []);
 
 	function renderPressList(pressList) {
