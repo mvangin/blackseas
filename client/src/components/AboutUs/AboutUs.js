@@ -12,7 +12,7 @@ function AboutUs() {
 							style={{ fontSize: '2.5rem' }}
 							className="text-center pt-4 text-white"
 						>
-							Analyzing emerging{' '}
+							Analyzing emerging
 							<span className="text-danger"> threat </span>vectors
 							in the <br /> maritime domain.
 						</h1>
@@ -32,14 +32,14 @@ function AboutUs() {
 								/>
 							</Card.Title>
 							<Card.Body className={`${classes.cardBody}`}>
-								A synthesis of{' '}
+								A synthesis of
 								<b className={`${classes.cardKeyWord}`}>
 									<i> qualitative </i>
-								</b>{' '}
-								and{' '}
+								</b>
+								and
 								<b className={`${classes.cardKeyWord}`}>
 									<i> quantitative </i>
-								</b>{' '}
+								</b>
 								research methods
 							</Card.Body>
 						</Card>
@@ -56,16 +56,14 @@ function AboutUs() {
 								/>
 							</Card.Title>
 							<Card.Body className={`${classes.cardBody}`}>
-								A{' '}
+								A
 								<b className={`${classes.cardKeyWord}`}>
-									{' '}
 									<i> non-partisan </i>
-								</b>{' '}
+								</b>
 								and
 								<b className={`${classes.cardKeyWord}`}>
-									{' '}
-									<i> objective </i>{' '}
-								</b>{' '}
+									<i> objective </i>
+								</b>
 								approach to generating analysis
 							</Card.Body>
 						</Card>
@@ -83,10 +81,10 @@ function AboutUs() {
 								/>
 							</Card.Title>
 							<Card.Body className={`${classes.cardBody}`}>
-								A strong focus on underpinning analysis with{' '}
+								A strong focus on underpinning analysis with
 								<b className={`${classes.cardKeyWord}`}>
 									<i> emperical </i>
-								</b>{' '}
+								</b>
 								evidence
 							</Card.Body>
 						</Card>

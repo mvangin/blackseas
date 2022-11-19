@@ -7,11 +7,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 function Press() {
 	const [regionalThematic, setRegionalThematic] = useState([]);
 	const [policyBrief, setPolicyBrief] = useState([]);
-	//const [openEditorial, setOpenEditorial] = useState([]);
-	const [showPress, setShowPress] = useState([
-		'regionalThematic',
-		'policyBrief',
-	]);
 
 	useEffect(() => {
 		const regionalThematicList = filterPressListByCategory(
@@ -25,12 +20,6 @@ function Press() {
 			'policy_brief_publication'
 		);
 		setPolicyBrief(policyBriefList);
-
-		// const openEditorialList = filterPressListByCategory(
-		// 	pressList,
-		// 	'open_editorial'
-		// );
-		//setOpenEditorial(openEditorialList);
 	}, []);
 
 	function renderPressList(pressList) {
@@ -143,28 +132,11 @@ function Press() {
 		return pressList.filter((pressItem) => pressItem.category === category);
 	}
 
-	function handleShowPress(category) {
-		if (showPress.includes(category)) {
-			setShowPress((prevState) =>
-				prevState.filter((item) => item !== category)
-			);
-			return;
-		}
-
-		setShowPress((prevState) => [...prevState, category]);
-	}
-
 	return (
 		<div className={`mt-2`} id="press">
 			<div className={`${classes.pressContainer}`}>
 				<div>
-					<button
-						className={`${classes.pressExpandButton}`}
-						onClick={() => handleShowPress('regionalThematic')}
-					></button>
-					{showPress.includes('regionalThematic') && (
-						<ul>{renderPrimaryPressList(regionalThematic)}</ul>
-					)}
+					<ul>{renderPrimaryPressList(regionalThematic)}</ul>
 				</div>
 
 				<div className={`${classes.pressSection}`}>
@@ -172,45 +144,10 @@ function Press() {
 
 					<span className={`${classes.pressSectionHeader}`}>
 						Featured Policy Brief Publications
-						<div
-							className={`${classes.downArrow} ${
-								showPress.includes('policyBrief') &&
-								classes.pressedExpandButton
-							} `}
-						>
-							»
-						</div>
 					</span>
-					{showPress.includes('policyBrief') && (
-						<ul className="">{renderPressList(policyBrief)}</ul>
-					)}
+                    
+					<ul className="">{renderPressList(policyBrief)}</ul>
 				</div>
-
-				{/*<div
-					className={`${classes.pressSection} ${classes.editorials}`}
-				>
-					<button
-						className={`${classes.pressExpandButton}`}
-						onClick={() => handleShowPress('openEditorial')}
-					>
-						<h2 className={`${classes.pressSectionHeader} `}>
-							Open Editorials
-							<div
-								className={`${classes.downArrow} ${
-									showPress.includes('openEditorial') &&
-									classes.pressedExpandButton
-								} `}
-							>
-								»
-							</div>
-						</h2>
-					</button>
-					<div>
-						{showPress.includes('openEditorial') && (
-							<ul>{renderPressList(openEditorial)}</ul>
-						)}
-					</div>
-                        </div>*/}
 			</div>
 		</div>
 	);
