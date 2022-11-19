@@ -3,7 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import classes from './navbar.module.css';
 
 function NavbarComponent() {
-
 	return (
 		<>
 			<Navbar
@@ -33,12 +32,8 @@ function NavbarComponent() {
 						>
 							Press
 						</Nav.Link>
-						<Nav.Link
-                        href="#contact-form"
-                        >
-							<div
-								className={`${classes.contactUs} `}
-							>
+						<Nav.Link href="#contact-form">
+							<div className={`${classes.contactUs} `}>
 								Contact Us
 							</div>
 						</Nav.Link>

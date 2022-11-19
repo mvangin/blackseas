@@ -3,7 +3,7 @@ import api from '../../api';
 import BaseButton from '../shared/BaseButton/BaseButton';
 import classes from './contactForm.module.css';
 
-function ContactForm({ messageSent, handleMessageSent}) {
+function ContactForm({ messageSent, handleMessageSent }) {
 	const [email, setEmail] = useState('');
 	const [name, setName] = useState('');
 	const [content, setContent] = useState('');
@@ -33,7 +33,7 @@ function ContactForm({ messageSent, handleMessageSent}) {
 			<div>
 				<h3 className="text-white">{!messageSent && 'Contact Us'}</h3>
 				<div>
-					{!messageSent &&
+					{!messageSent && (
 						<form
 							onSubmit={handleSubmit}
 							className={`${classes.contactForm}`}
@@ -78,8 +78,8 @@ function ContactForm({ messageSent, handleMessageSent}) {
 									{validationErrors}
 								</div>
 							)}
-						</form>}
-					
+						</form>
+					)}
 				</div>
 				<div className={`${classes.contactFooter}`}>
 					{!messageSent && (

@@ -1,8 +1,8 @@
 .pressContainer {
 	margin-top: 50px;
 	display: flex;
-    flex-direction: column;
-    align-items:center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .pressSection {
@@ -18,8 +18,8 @@
 
 .pressSectionHeader {
 	text-align: left;
-    margin-left: 5rem;
-    font-weight: bold;
+	margin-left: 5rem;
+	font-weight: bold;
 }
 
 .pressSection ul {
@@ -29,10 +29,9 @@
 	justify-content: center;
 }
 
-.pressSection ul li:hover{
-    cursor: pointer;
-    transform: translate(0, -2px)
-
+.pressSection ul li:hover {
+	cursor: pointer;
+	transform: translate(0, -2px);
 }
 
 .pressSection ul li {
@@ -43,7 +42,7 @@
 }
 
 .pressSection.editorials ul li {
-    width: 300px;
+	width: 300px;
 }
 
 .pressSection ul li span {
@@ -51,95 +50,93 @@
 }
 
 .downArrow {
-    transition: transform .5s;
+	transition: transform 0.5s;
 	transform: rotate(90deg);
 	font-size: 30px;
 	color: white;
-    display: inline-block;
-    margin-left: 10px;
-    margin-top: 8px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 8px;
 }
 
 .pressExpandButton {
-    border: none;
-    padding: none;
-    background: none;
+	border: none;
+	padding: none;
+	background: none;
 }
 
-
 .pressExpandButton:hover {
-    transform: translate(0px, 2px);
+	transform: translate(0px, 2px);
 }
 
 .downArrow.pressedExpandButton {
-    transition: transform .5s;
-    transform: rotate(-90deg);
+	transition: transform 0.5s;
+	transform: rotate(-90deg);
 }
 
 .link {
-    text-decoration: none;
-    color: black;
-    justify-content: center;
-    line-height: 2rem;
+	text-decoration: none;
+	color: black;
+	justify-content: center;
+	line-height: 2rem;
 }
 
 .primaryLink {
-    padding: 3rem;
+	padding: 3rem;
 }
 
 .pressTitle {
-    font-size: 1.2rem;
-    margin-top: 2rem;
+	font-size: 1.2rem;
+	margin-top: 2rem;
 }
 
 .imageContainer {
-    width: 50%;
-    min-width: 300px;
+	width: 50%;
+	min-width: 300px;
 }
 
-.titleContainer{
-    width: 50%;
-    
+.titleContainer {
+	width: 50%;
 }
 
-.horizontalLine{
-    text-align:center;
-    margin-right: 5rem;
-    margin-left: 5rem;
-    opacity: 1;
+.horizontalLine {
+	text-align: center;
+	margin-right: 5rem;
+	margin-left: 5rem;
+	opacity: 1;
 }
 
 .articleInfo {
-    font-size: .8rem;
+	font-size: 0.8rem;
 }
 
 .primaryPressTitle {
-    padding-top: 5rem;
+	padding-top: 5rem;
 }
 
-.primaryPressList{
-    justify-content: around;
+.primaryPressList {
+	justify-content: around;
 }
 
-@keyframes slide-in-from-left{
-    0% {
-        transform: translateX(-100%)
-    }
-    100% {
-        transform: translateX(0%)
-    }
+@keyframes slide-in-from-left {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
 }
 
 @media screen and (max-width: 500px) {
-	.primaryPressList{
-        justify-content: start;
-    }
+	.primaryPressList {
+		justify-content: start;
+	}
 
-    .primaryPressTitle {
-        padding-top: 0rem;
-    }
+	.primaryPressTitle {
+		padding-top: 0rem;
+	}
 
-    .titleContainer{
-        width:100%;        
-    }
+	.titleContainer {
+		width: 100%;
+	}
 }

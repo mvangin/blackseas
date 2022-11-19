@@ -1,33 +1,26 @@
 .contactUsContainer {
-    color: white;
-    text-align: center;
+	color: white;
+	text-align: center;
 }
-
 
 .diagonal {
-    background-color: #051d2c;
-    height: 100vh;
-    padding-top: 5rem;
+	background-color: #051d2c;
+	height: 100vh;
+	padding-top: 5rem;
 }
 
-
-.content { 	
-    margin: 0 auto;
+.content {
+	margin: 0 auto;
 }
 
 .contactHeader {
-    text-align: center;
-    width: 50%;
-    margin-top: 3rem;
+	text-align: center;
+	width: 50%;
+	margin-top: 3rem;
 }
 
-
-
-
 @media screen and (max-width: 991px) {
-    .diagonal {
-        height: auto;
-    }
-
-  
+	.diagonal {
+		height: auto;
+	}
 }

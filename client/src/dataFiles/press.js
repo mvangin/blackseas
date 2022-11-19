@@ -6,7 +6,7 @@ const press = [
 		author: 'Authored with Christopher Faulkner (University of Central Florida), Curtis Bell, Meghan Curran, Tyler Lycan, and Jay Benson (all Stable Seas)',
 		category: 'major_regional_thematic_report',
 		link: 'https://www.stableseas.org/post/violence-at-sea-how-terrorists-insurgents-and-other-extremists-exploit-the-maritime-domain',
-		imageSrc: 'image4.jpg',
+		imageSrc: 'waterMountains.jpg',
 		previewText: "While the challenges of securing the maritime domain are well understood in both academic and policy circles, developing robust and effective capabilities to quell maritime threats remains an intricate challenge."
 	},
 	{
@@ -16,7 +16,7 @@ const press = [
 		author: 'Authored with Jay Benson, Curtis Bell, Lydelle Joubert, Maisie Pigeon, Asyura Salleh (all stable seas), Gayathri Iyer, (Observer Research Foundation), M J Rahman (World Fish), and M A Wahab (World Fish)',
 		category: 'major_regional_thematic_report',
 		link: 'https://www.stableseas.org/post/stable-seas-bay-of-bengal#:~:text:Stable%20Seas%3A%20Bay%20of%20Bengal%20examines%20maritime%20security%20and%20governance,enforcement%20capacity%2C%20and%20international%20cooperation.',
-		imageSrc: 'image3.jpg',
+		imageSrc: 'waterHut.jpg',
 		previewText: "Examines maritime security and governance in the Bay of Bengal across nine issue areas including the blue economy, coastal welfare, rule of law, piracy and armed robbery, illicit trades, maritime mixed migration, fisheries, maritime enforcement capacity, and international cooperation."
 	},
 	{
@@ -26,7 +26,7 @@ const press = [
 		author: 'Author.',
 		category: 'policy_brief_publication',
 		link: 'https://www.europeum.org/en/articles/detail/4692/policy-brief-black-sea-synergy-adopting-a-holistic-approach-to-maritime-security',
-		imageSrc: 'image2.jpg',
+		imageSrc: 'waterSun.jpg',
 		previewText: 'Provides an overview of the current situation in the region, possible threats, and ways to prevent them. '
 	},
 	{
@@ -36,7 +36,7 @@ const press = [
 		author: 'Author.',
 		category: 'policy_brief_publication',
 		link: 'https://www.stableseas.org/post/addressing-maritime-security-in-southeast-asia',
-		imageSrc: 'image1.jpg',
+		imageSrc: 'waterTree.jpg',
 		previewText: 'Policy brief thats maps and measures threats to maritime security across Southeast Asia, as well as the efforts to counter them. '
 	},
 
@@ -47,7 +47,7 @@ const press = [
 		author: 'Author.',
 		category: 'policy_brief_publication',
 		link: 'https://www.stableseas.org/post/the-blue-economy-in-the-bangsamoro-autonomous-region-in-muslim-mindanao',
-		imageSrc: 'image5.jpg',
+		imageSrc: 'waterRocks.jpg',
 		previewText: 'Examines how improvements to the Blue Economy of the Bangsamoro Autonomous  Region can be made.'
 	},
 	{
@@ -57,7 +57,7 @@ const press = [
 		author: 'Author.',
 		category: 'policy_brief_publication',
 		link: 'https://www.stableseas.org/post/challenges-and-solutions-for-maritime-security-in-the-indian-ocean',
-		imageSrc: 'image6.jpg',
+		imageSrc: 'waterSunset.jpg',
 		previewText: 'Examines maritime security and governance in the Indian Ocean region across nine issue areas.'
 	},
 	{

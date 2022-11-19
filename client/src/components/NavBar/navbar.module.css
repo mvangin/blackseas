@@ -1,62 +1,57 @@
 .contactUs {
-    text-align: center;
-    background: #033398;
-    border: 1px solid #033398;
-    border-radius: 5px;
-    color: white;
-    max-width: 150px;
-    padding: .5rem;
+	text-align: center;
+	background: #033398;
+	border: 1px solid #033398;
+	border-radius: 5px;
+	color: white;
+	max-width: 150px;
+	padding: 0.5rem;
 }
 
 .contactUs:hover {
-    transform: scale(1.05);
-    color: white;
+	transform: scale(1.05);
+	color: white;
 }
 
 .navLink {
-    color: white;
-    font-size: 1.1rem
+	color: white;
+	font-size: 1.1rem;
 }
 
 .navLink:hover {
-    transform: scale(.98);
-    color: rgb(187, 187, 187);
-
+	transform: scale(0.98);
+	color: rgb(187, 187, 187);
 }
 
 .increasedFontSize {
-    font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .navbarContainer {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+	display: flex;
+	align-items: center;
+	margin-left: auto;
 }
 
 .navBar {
-    background-color: #051d2c;
+	background-color: #051d2c;
 }
 
-
-
 @media screen and (max-width: 500px) {
-    .contactUs {
-        margin-left: auto;
-    }
+	.contactUs {
+		margin-left: auto;
+	}
 
-    .navBar {
-        background-color: transparent;
-    } 
-    .navbarContainer {
-        margin-top:1rem;
-        text-align: center;
-        padding-top: 2rem;
-        display: block;
-        float: right;
-        background:#051b2b;
-        border-radius: 10px;
-    }
-
-  
+	.navBar {
+		background-color: transparent;
+	}
+	.navbarContainer {
+		margin-top: 1rem;
+		text-align: center;
+		padding-top: 2rem;
+		display: block;
+		float: right;
+		background: #051b2b;
+		border-radius: 10px;
+	}
 }
