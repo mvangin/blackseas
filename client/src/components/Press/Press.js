@@ -36,23 +36,26 @@ function Press() {
 						/>
 					</div>
 				)}
-				<div className="">
-					<h2 className={classes.pressTitle}>{pressItem.title} </h2>
-					<div className="mt-3">{pressItem.previewText}</div>
-					<a
-						className={`${classes.link}`}
-						href={pressItem.link}
-						target="_blank"
-						rel="noreferrer"
-					>
+				<a
+					className={`${classes.link}`}
+					href={pressItem.link}
+					target="_blank"
+					rel="noreferrer"
+				>
+					<div className="">
+						<h2 className={classes.pressTitle}>
+							{pressItem.title}
+						</h2>
+						<div className="mt-3">{pressItem.previewText}</div>
+
 						<BaseButton
 							className="text-start p-0"
 							buttonText={'See More'}
 							outline={false}
 							arrow="true"
 						/>
-					</a>
-				</div>
+					</div>
+				</a>
 			</li>
 		));
 	}
@@ -145,7 +148,7 @@ function Press() {
 					<span className={`${classes.pressSectionHeader}`}>
 						Featured Policy Brief Publications
 					</span>
-                    
+
 					<ul className="">{renderPressList(policyBrief)}</ul>
 				</div>
 			</div>
