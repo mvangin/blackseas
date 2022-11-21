@@ -38,7 +38,7 @@ function ContactUs() {
 						<div className={`${classes.content}`}>
 							<div className={`${classes.contactUsContainer}`}>
 								<h1
-									className={`${classes.contactHeader}  w-75 mx-auto`}
+									className={`${classes.contactHeader}  w-75`}
 								>
 									<ScrollAnimation
 										animateOnce={true}

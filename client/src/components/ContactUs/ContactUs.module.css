@@ -9,10 +9,6 @@
 	padding-top: 5rem;
 }
 
-.content {
-	margin: 0 auto;
-}
-
 .contactHeader {
 	text-align: center;
 	width: 50%;
@@ -22,5 +18,11 @@
 @media screen and (max-width: 991px) {
 	.diagonal {
 		height: auto;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.contactHeader {
+		margin: 0 auto;
 	}
 }

@@ -13,7 +13,7 @@ function NavbarComponent() {
 				expand="sm"
 				variant="dark"
 			>
-				<Navbar.Brand className="ms-3" href="#home">
+				<Navbar.Brand className={`${classes.navbarbrand} ms-3`} href="#home">
 					Black Seas Consultancy
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />

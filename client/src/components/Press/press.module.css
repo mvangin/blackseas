@@ -140,16 +140,25 @@
 		width: 100%;
 	}
 
-    .primaryLink {
-        padding: 0rem;
-        padding-top: 1rem;
+    .pressSection ul {
+        justify-content: start;
+        padding: 0;
+    }
+
+    .pressSection ul li{
+        justify-content: start;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .pressSectionHeader {
+        margin-left: 0px;
     }
 }
 
 @media screen and (max-width: 620px) {
     .primaryLink {
-        padding: 0rem;
-        padding-top: 1rem;
+        padding: 1rem .5rem 0rem .5rem;
     }
 }
 
