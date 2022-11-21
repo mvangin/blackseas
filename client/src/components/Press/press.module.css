@@ -139,4 +139,22 @@
 	.titleContainer {
 		width: 100%;
 	}
+
+    .primaryLink {
+        padding: 0rem;
+        padding-top: 1rem;
+    }
 }
+
+@media screen and (max-width: 620px) {
+    .primaryLink {
+        padding: 0rem;
+        padding-top: 1rem;
+    }
+}
+
+
+
+
+
+

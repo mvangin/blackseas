@@ -35,6 +35,8 @@
 
 .navBar {
 	background-color: #051d2c;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @media screen and (max-width: 500px) {

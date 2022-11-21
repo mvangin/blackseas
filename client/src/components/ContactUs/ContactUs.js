@@ -35,7 +35,7 @@ function ContactUs() {
 					</div>
 				) : (
 					<div className="d-flex align-items-center justify-content-center flex-wrap">
-						<div className={`${classes.content} w-50`}>
+						<div className={`${classes.content}`}>
 							<div className={`${classes.contactUsContainer}`}>
 								<h1
 									className={`${classes.contactHeader}  w-75 mx-auto`}

@@ -20,7 +20,7 @@
 /* Background diagonal  */
 
 .content {
-	max-width: 65em;
+	max-width: 75em;
 	margin: 0 auto;
 }
 
@@ -29,6 +29,7 @@
 	bottom: 170px;
 	position: absolute;
 	animation: slide-in-from-left 1.5s;
+	font-size: 0.8rem;
 }
 
 .homepageInner > *:last-child {
@@ -38,8 +39,16 @@
 	animation: slide-in-from-left 1.5s;
 }
 
+.homePageImage {
+	position: absolute;
+	right: 0;
+	width: 50%;
+	bottom: 40px;
+}
+
 .homepageTitle {
 	padding: 20px;
+	font-size: 2rem;
 }
 
 .homeLink {
@@ -60,6 +69,16 @@
 
 .arrow {
 	color: #00a9f4;
+}
+
+@media screen and (max-width: 1050px) {
+	.homePageImage {
+		display: none;
+	}
+
+	.homepageTitle {
+		font-size: revert;
+	}
 }
 
 @keyframes slide-in-from-left {
