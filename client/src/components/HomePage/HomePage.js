@@ -34,7 +34,13 @@ function Homepage() {
 									</div>
 								}
 							</div>
-                            <img className={`${classes.homePageImage}`} alt="boat" src="boat.png" />
+							<img
+								className={`${classes.homePageImage}`}
+								width="550"
+								height="350"
+								alt="boat"
+								src="boat.png"
+							/>
 						</div>
 					</div>
 				</div>
