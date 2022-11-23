@@ -1,0 +1,16 @@
+.missionContainer {
+	max-width: 300px;
+	margin: 0 3rem;
+}
+
+.missionContainer h1 {
+	color: rgb(14 122 182);
+	font-size: 1.6rem;
+}
+
+.missionWrapper {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

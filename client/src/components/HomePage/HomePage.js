@@ -1,4 +1,3 @@
-//import AboutUs from '../AboutUs/AboutUs';
 import BaseButton from '../shared/BaseButton/BaseButton';
 import classes from './homePage.module.css';
 import ContactUs from '../ContactUs/ContactUs';
@@ -45,6 +44,8 @@ function Homepage() {
 					</div>
 				</div>
 			</div>
+			{/* TODO: Add these pages */}
+			{/* <Mission /> */}
 			{/*<AboutUs />*/}
 			<Press />
 			<ContactUs />
