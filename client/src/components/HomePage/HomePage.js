@@ -39,7 +39,7 @@ function Homepage() {
 								width="550"
 								height="350"
 								alt="boat"
-								src="boat.png"
+								src="boat.jpg"
 							/>
 						</div>
 					</div>
