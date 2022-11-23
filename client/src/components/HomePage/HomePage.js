@@ -3,6 +3,7 @@ import classes from './homePage.module.css';
 import ContactUs from '../ContactUs/ContactUs';
 import Press from '../Press/Press';
 import React from 'react';
+import Mission from '../Mission/Mission';
 
 function Homepage() {
 	return (
@@ -45,7 +46,7 @@ function Homepage() {
 				</div>
 			</div>
 			{/* TODO: Add these pages */}
-			{/* <Mission /> */}
+			<Mission />
 			{/*<AboutUs />*/}
 			<Press />
 			<ContactUs />

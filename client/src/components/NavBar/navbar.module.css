@@ -1,11 +1,7 @@
 .contactUs {
 	text-align: center;
-	background: #033398;
-	border: 1px solid #033398;
-	border-radius: 5px;
 	color: white;
 	max-width: 150px;
-	padding: 0.5rem;
 }
 
 .contactUs:hover {
