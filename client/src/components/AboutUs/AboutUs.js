@@ -6,88 +6,47 @@ function AboutUs() {
 	return (
 		<div className={`${classes.diagonal}`}>
 			<div className={`${classes.content} pt-1`}>
-				<div id="about_us" className="pt-1">
+				<div id="about_us" className={`${classes.aboutUs} pt-1 d-flex flex-wrap`}>
 					<div className={`${classes.aboutUsHeader}`}>
-						<h1
-							style={{ fontSize: '2.5rem' }}
-							className="text-center pt-4 text-white"
-						>
-							Analyzing emerging
-							<span className="text-danger"> threat </span>vectors
-							in the <br /> maritime domain.
-						</h1>
+						<img
+							className={`${classes.chart}`}
+							alt="sustainable maritime security chart"
+							src="chart.png"
+						/>
 					</div>
-					<div className="d-flex justify-content-around flex-wrap">
-						<Card
-							className={`${classes.cardContainer}`}
-							style={{ borderRadius: '20px', width: '18rem' }}
-						>
-							<Card.Title className="text-center p-2">
-								<img
-									style={{ borderRadius: '20px' }}
-									alt="data chart"
-									src="dataChart.jpeg"
-									height={80}
-									width={80}
-								/>
-							</Card.Title>
-							<Card.Body className={`${classes.cardBody}`}>
-								A synthesis of
-								<b className={`${classes.cardKeyWord}`}>
-									<i> qualitative </i>
-								</b>
-								and
-								<b className={`${classes.cardKeyWord}`}>
-									<i> quantitative </i>
-								</b>
-								research methods
-							</Card.Body>
-						</Card>
-						<Card
-							className={`${classes.cardContainer}`}
-							style={{ borderRadius: '20px', width: '18rem' }}
-						>
-							<Card.Title className="text-center p-2">
-								<img
-									alt="bullseye"
-									src="bullseye.png"
-									height={80}
-									width={80}
-								/>
-							</Card.Title>
-							<Card.Body className={`${classes.cardBody}`}>
-								A
-								<b className={`${classes.cardKeyWord}`}>
-									<i> non-partisan </i>
-								</b>
-								and
-								<b className={`${classes.cardKeyWord}`}>
-									<i> objective </i>
-								</b>
-								approach to generating analysis
-							</Card.Body>
-						</Card>
-						<Card
-							className={`${classes.cardContainer}`}
-							style={{ borderRadius: '20px', width: '18rem' }}
-						>
-							<Card.Title className="text-center p-2">
-								<img
-									style={{ borderRadius: '20px' }}
-									alt="datachart"
-									src="dataChart.jpeg"
-									height={80}
-									width={80}
-								/>
-							</Card.Title>
-							<Card.Body className={`${classes.cardBody}`}>
-								A strong focus on underpinning analysis with
-								<b className={`${classes.cardKeyWord}`}>
-									<i> emperical </i>
-								</b>
-								evidence
-							</Card.Body>
-						</Card>
+					<div className="d-flex flex-column justify-content-around p-3">
+						<div className={`${classes.card}`}>
+							<h1> Why Black Seas Consultancy? </h1>
+						</div>
+						<div className={`${classes.card}`}>
+							A synthesis of
+							<b className={`${classes.cardKeyWord}`}>
+								<i> qualitative </i>
+							</b>
+							and
+							<b className={`${classes.cardKeyWord}`}>
+								<i> quantitative </i>
+							</b>
+							research methods
+						</div>
+						<div className={`${classes.card}`}>
+							A
+							<b className={`${classes.cardKeyWord}`}>
+								<i> non-partisan </i>
+							</b>
+							and
+							<b className={`${classes.cardKeyWord}`}>
+								<i> objective </i>
+							</b>
+							approach to generating analysis
+						</div>
+						<div className={`${classes.card}`}>
+							A strong focus on underpinning analysis with
+							<b className={`${classes.cardKeyWord}`}>
+								<i> emperical </i>
+							</b>
+							evidence
+						</div>
 					</div>
 				</div>
 			</div>

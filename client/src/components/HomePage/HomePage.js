@@ -4,6 +4,7 @@ import ContactUs from '../ContactUs/ContactUs';
 import Press from '../Press/Press';
 import React from 'react';
 import Mission from '../Mission/Mission';
+import AboutUs from '../AboutUs/AboutUs';
 
 function Homepage() {
 	return (
@@ -47,7 +48,7 @@ function Homepage() {
 			</div>
 			{/* TODO: Add these pages */}
 			<Mission />
-			{/*<AboutUs />*/}
+			{/*<AboutUs/>*/}
 			<Press />
 			<ContactUs />
 		</>

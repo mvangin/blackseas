@@ -3,8 +3,18 @@
 	border: none;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
+	margin-top: 2rem;
 	margin: 10px;
 }
+
+
+.aboutUs{
+	margin-top: 8rem;
+	max-width: 1000px;
+	margin: 8rem auto;
+	justify-content: space-around;
+}
+
 
 .cardContainer:hover {
 	transform: scale(0.98);
@@ -17,14 +27,25 @@
 	font-size: 1.3rem;
 }
 
-.cardKeyWord {
-	font-size: 0.5rem;
+.chart {
+	width: 100%;
+	max-width: 500px;
 }
 
-.aboutUsHeader {
-	margin: 50px auto 50px auto;
-	text-align: center;
+.card {
+	color: white;
+	max-width: 300px;
+    margin: 0 auto;
 }
+
+.card h1 {
+	font-size: 2rem;
+}
+
+.cardKeyWord {
+	color: rgb(14 122 182);
+}
+
 
 .homepageContainer {
 	position: relative;
@@ -51,7 +72,5 @@
 
 .content {
 	background: black;
-	padding-left: 150px;
-	padding-right: 150px;
-	margin: 0 auto;
+
 }
