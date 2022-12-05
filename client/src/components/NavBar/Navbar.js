@@ -25,9 +25,8 @@ function NavbarComponent() {
 						>
 							Home
 						</Nav.Link>
-						{
-                        // TODO: add about section
-                        /*<Nav.Link className={`${classes.navLink}`} href="#about_us">About Us</Nav.Link>*/}
+						<Nav.Link className={`${classes.navLink}`} href="#mission">Mission</Nav.Link>
+                        <Nav.Link className={`${classes.navLink}`} href="#about_us">About</Nav.Link>
 						<Nav.Link
 							className={`${classes.navLink}`}
 							href="#press"

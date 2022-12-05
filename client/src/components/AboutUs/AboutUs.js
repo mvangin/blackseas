@@ -1,12 +1,11 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
 import classes from './aboutUs.module.css';
 
 function AboutUs() {
 	return (
-		<div className={`${classes.diagonal}`}>
+		<div id="about_us" className={`${classes.diagonal}`}>
 			<div className={`${classes.content} pt-1`}>
-				<div id="about_us" className={`${classes.aboutUs} pt-1 d-flex flex-wrap`}>
+				<div  className={`${classes.aboutUs} pt-1 d-flex flex-wrap`}>
 					<div className={`${classes.aboutUsHeader}`}>
 						<img
 							className={`${classes.chart}`}

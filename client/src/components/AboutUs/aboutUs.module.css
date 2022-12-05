@@ -30,12 +30,14 @@
 .chart {
 	width: 100%;
 	max-width: 500px;
+	border-radius: 15px;
 }
 
 .card {
 	color: white;
 	max-width: 300px;
-    margin: 0 auto;
+    margin: 0 auto 3rem auto;
+	font-size: 1.2rem;
 }
 
 .card h1 {
@@ -43,7 +45,7 @@
 }
 
 .cardKeyWord {
-	color: rgb(14 122 182);
+	color: rgb(37 165 237);
 }
 
 
@@ -73,4 +75,10 @@
 .content {
 	background: black;
 
+}
+
+@media screen and (max-width: 800px) {
+	.diagonal {
+		height: inherit;
+	}
 }

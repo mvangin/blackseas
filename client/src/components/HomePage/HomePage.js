@@ -1,10 +1,10 @@
+import AboutUs from '../AboutUs/AboutUs';
 import BaseButton from '../shared/BaseButton/BaseButton';
 import classes from './homePage.module.css';
 import ContactUs from '../ContactUs/ContactUs';
+import Mission from '../Mission/Mission';
 import Press from '../Press/Press';
 import React from 'react';
-import Mission from '../Mission/Mission';
-import AboutUs from '../AboutUs/AboutUs';
 
 function Homepage() {
 	return (
@@ -24,7 +24,7 @@ function Homepage() {
 								</div>
 								{
 									<div className={`${classes.linkContainer}`}>
-										<a href="#press">
+										<a href="#mission">
 											<BaseButton
 												className={'text-white'}
 												variant={'outline-primary'}
@@ -48,7 +48,7 @@ function Homepage() {
 			</div>
 			{/* TODO: Add these pages */}
 			<Mission />
-			{/*<AboutUs/>*/}
+			<AboutUs/>
 			<Press />
 			<ContactUs />
 		</>

@@ -3,6 +3,7 @@ import classes from './mission.module.css';
 function Mission() {
 	return (
 		<div
+			id="mission"
 			className={`${classes.missionWrapper} d-flex flex-wrap justify-content-center`}
 		>
 			<div className={`${classes.missionContainer}`}>
