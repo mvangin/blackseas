@@ -62,12 +62,12 @@
 /* Background diagonal  */
 
 .diagonal {
-	background-color: black;
+	background-color: #051d2c;
 	height: 100vh;
 }
 
 .diagonal::before {
-	background: black;
+	background: #051d2c;
 	width: 300px;
 	height: 300px;
 }
